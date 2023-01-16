@@ -1,0 +1,39 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+
+  .titulo {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  header {
+    width: 100%;
+    display: block;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+    display: block;
+  }
+
+  #carrinhoCompras {
+    margin-top: 30px;
+  }
+
+  #total {
+    margin-top: 30px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+  }

@@ -1,0 +1,246 @@
+<mat-toolbar>
+    <span>TIAGO BASTOS CARNEIRO</span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+
+<div class="titulo">
+    <h1>Produtos</h1>
+</div>
+
+<div id="produtos">
+    <mat-grid-list cols="2" rowHeight="3:1">
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[0].imgPath }}" width="200" height="250" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[0].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[0].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[0])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[0].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[0])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[1].imgPath }}" width="200" height="200" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[1].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[1].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[1])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[1].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[1])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[2].imgPath }}" width="300" height="200" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[2].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[2].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[2])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[2].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[2])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[3].imgPath }}" width="200" height="200" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[3].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[3].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[3])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[3].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[3])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[4].imgPath }}" width="200" height="200" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[4].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[4].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[4])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[4].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[4])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <header>
+                <img ngSrc="{{ productsList[5].imgPath }}" width="200" height="200" priority>
+            </header>
+            <section>
+                <article>
+                    <b>
+                        <span style="font-size: medium;">
+                            Produto: {{ productsList[5].name }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 10px;">
+                    <b>
+                        <span style="font-size: medium;">
+                            Preço: {{ productsList[5].price | currency:'BRL':true }}
+                        </span>
+                    </b>
+                </article>
+                <article style="margin-top: 15px;">
+                    <button mat-mini-fab color="primary" (click)="reduceAmount(productsList[5])">
+                        <mat-icon>remove</mat-icon>
+                    </button>
+                    <span style="font-size: medium; padding-left: 10px; padding-right: 10px;">
+                        Quantidade: {{ productsList[5].amount }}
+                    </span>
+                    <button mat-mini-fab color="primary" (click)="sumAmount(productsList[5])">
+                        <mat-icon>add</mat-icon>
+                    </button>
+                </article>
+            </section>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div class="titulo">
+    <h1>Carrinho de Compras</h1>
+</div>
+
+<div id="carrinhoCompras"  *ngIf="productsOrderList.length > 0">
+    <table mat-table [dataSource]="data$" class="mat-elevation-z8">
+
+        <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Produto </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef> Preço </th>
+          <td mat-cell *matCellDef="let element"> {{element.price | currency:'BRL':true}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="amount">
+          <th mat-header-cell *matHeaderCellDef> Quantidade </th>
+          <td mat-cell *matCellDef="let element"> {{element.amount}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+</div>
+
+<div id="total"  *ngIf="productsOrderList.length > 0">
+    <label><b>Valor Total: {{valueOrderFinal | currency:'BRL':true}} </b></label>
+</div>
+
+<div class="btn" *ngIf="productsOrderList.length > 0">
+    <button mat-raised-button color="primary">Comprar</button>
+</div>
